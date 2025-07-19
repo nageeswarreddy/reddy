@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.screen {
+  background: #333;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.seats {
+  display: grid;
+  grid-template-columns: repeat(8, 30px);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.seat {
+  height: 30px;
+  width: 30px;
+  background: #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background: #6feaf6;
+}
+
+.seat.occupied {
+  background: #444;
+  cursor: not-allowed;
+}
+
+.info {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
